@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    background-color: azure;
+}
+.quizbox{
+    padding: 100px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 10px;
+}
+.quizbox h3{
+    padding-bottom: 50px;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+.quizbox li{
+    padding-bottom: 20px;
+    list-style: none;
+    font-size: 1.1rem;
+}
+#btn{
+    color: white;
+    font-size: 1rem;
+    display: block;
+    margin: auto;
+    background-color: lightseagreen;
+    outline: none;
+    padding: 3px 3px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px ;
+}
+#btn:hover{
+    background: linear-gradient(lightblue, blue);
+}
+.options{
+    cursor: pointer;
+}
+.scorecard{
+    margin: auto;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    display: none;
+    margin-top: 2rem;
+}
+#restart{
+    background-color: blue;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    padding: 5px 5px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+#restart:hover{
+    background: linear-gradient(lightseagreen, lightblue);
+}
+#showscore{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+   .quizbox h3{
+    font-size: 15px;
+   } 
+   .answer{
+    font-size: 10px;
+   }
+}
